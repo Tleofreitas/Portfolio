@@ -66,7 +66,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  min-width: 1300px;
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -180,6 +180,11 @@ body {
   margin-top: 30px;
 }
 
+.about-container-infos {
+width: 1000px;
+margin: 0 auto;
+}
+
 .about-title { font-size: 36px;
   text-align: center;
   color: var(--color-white);
@@ -188,18 +193,6 @@ body {
 }
 
 .col-6 { padding-bottom: 20px;}
-
-footer {
-    background-color: var(--color-1);
-    height: 80px;
-    width: 100%;
-    padding: 20px;
-}
-
-.tks { font-size: 16px;
-color: var(--color-white);
-text-align: center;
-margin:10px;}
 
 .accordion-body { color: var(--color-1);
 text-align: justify;
@@ -212,3 +205,15 @@ color: var(--color-1); display: flex;
 align-items: center;}
 
 .accordion-body a:hover { color: blue;}
+
+footer {
+  background-color: var(--color-1);
+  height: 80px;
+  width: 100%;
+  padding: 20px;
+}
+
+.tks { font-size: 16px;
+color: var(--color-white);
+text-align: center;
+margin:10px;}
