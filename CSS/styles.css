@@ -52,7 +52,7 @@ body {
 
 .menu-items li {
   margin: 10px;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .nav-main a:hover {
@@ -60,7 +60,7 @@ body {
 }
 
 .nav-brand {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -108,19 +108,19 @@ body {
 
 .profile-title {
   margin: 35px 0 0 0;
-  font-size: 30px;
+  font-size: 45px;
   margin: 10px 0;
   text-align: center;
 }
 
 .profile-description {
   margin: 0;
-  font-size: 20px;
+  font-size: 30px;
   text-align: justify;
 }
 
 .portfolio-title{
-  font-size: 48px;
+  font-size: 72px;
   text-align: center;
   color: var(--color-1);
   margin: 30px 0;
@@ -155,7 +155,7 @@ body {
 }
 .card p {
   width: 90%;
-  font-size: 16px;
+  font-size: 24px;
 }
 .card a {
   margin: 10px;
@@ -185,7 +185,7 @@ width: 1000px;
 margin: 0 auto;
 }
 
-.about-title { font-size: 36px;
+.about-title { font-size: 54px;
   text-align: center;
   color: var(--color-white);
   padding: 20px 0;
@@ -213,7 +213,7 @@ footer {
   padding: 20px;
 }
 
-.tks { font-size: 16px;
+.tks { font-size: 24px;
 color: var(--color-white);
 text-align: center;
 margin:10px;}
