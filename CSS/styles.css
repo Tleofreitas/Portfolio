@@ -162,12 +162,9 @@ body {
   margin: 20px;
 }
 
-.btn-dark { width: 160px;
-  font-size: 24px;}
+.card .btn { font-size: 24px;}
 
-.btn-danger { font-size: 24px;}
-
-.modal-dialog { min-width: 750px;}
+.modal-dialog { min-width: 850px;}
 
 .modal-title { font-size: 30px;}
 .modal-body { font-size: 24px;}
@@ -182,8 +179,10 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 10px;
-  max-height: 300px;
+  max-height: 500px;
 }
+
+.modalferr div { margin: 20px;}
 
 .about-container {
   background-color: var(--color-3);
