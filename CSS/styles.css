@@ -52,7 +52,7 @@ body {
 
 .menu-items li {
   margin: 10px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .nav-main a:hover {
@@ -60,14 +60,13 @@ body {
 }
 
 .nav-brand {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .container {
-  min-width: 1400px;
-  /* max-width: 1920px; */
+  min-width: 1100px;
   margin: 0 auto;
 }
 
@@ -91,7 +90,7 @@ body {
 }
 
 .pf-cont2 {
-  width: 675px;
+  width: 575px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,19 +107,19 @@ body {
 
 .profile-title {
   margin: 35px 0 0 0;
-  font-size: 45px;
+  font-size: 32px;
   margin: 10px 0;
   text-align: center;
 }
 
 .profile-description {
   margin: 0;
-  font-size: 30px;
+  font-size: 24px;
   text-align: justify;
 }
 
 .portfolio-title{
-  font-size: 72px;
+  font-size: 44px;
   text-align: center;
   color: var(--color-1);
   margin: 30px 0;
@@ -140,38 +139,38 @@ body {
   justify-content: center;
   align-items: center;
   margin: 20px;
-  width: 560px;
+  width: 280px;
 }
 
 .card img {
   width: 100%;
-  height: 400px;
+  height: 200px;
 }
 .card h4 {
   margin-top: 30px;
-  font-size: 36px;
+  font-size: 20px;
 }
 .cor {
   color: var(--main-color);
 }
 .card p {
   width: 90%;
-  font-size: 32px;
+  font-size: 16px;
 }
 .card a {
-  margin: 20px;
+  margin: 12px;
 }
 
-.card .btn { font-size: 24px;}
+.card .btn { font-size: 16px;}
 
 .modal-dialog { min-width: 850px;}
 
-.modal-title { font-size: 30px;}
-.modal-body { font-size: 24px;}
+.modal-title { font-size: 24px;}
+.modal-body { font-size: 16px;}
 
 .modal-body img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 .modalferr {
   display: flex;
@@ -179,7 +178,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 10px;
-  max-height: 500px;
+  max-height: 250px;
 }
 
 .modalferr div { margin: 20px;}
@@ -195,7 +194,7 @@ width: 1000px;
 margin: 0 auto;
 }
 
-.about-title { font-size: 54px;
+.about-title { font-size: 44px;
   text-align: center;
   color: var(--color-white);
   padding: 20px 0;
@@ -208,12 +207,13 @@ margin: 0 auto;
 text-align: justify;
 }
 
-.accordion-body img { width: 25px; height: 25px; margin: 10px;}
+.accordion-body img { width: 30px; height: 30px; margin: 10px;}
 
 .accordion-body a { text-decoration: none;
 color: var(--color-1); display: flex;
 align-items: center;}
 
+.accordion-header .accordion-button { font-size: 20px;}
 .accordion-body a:hover { color: blue;}
 
 footer {
@@ -223,7 +223,7 @@ footer {
   padding: 20px;
 }
 
-.tks { font-size: 24px;
+.tks { font-size: 16px;
 color: var(--color-white);
 text-align: center;
 margin:10px;}
