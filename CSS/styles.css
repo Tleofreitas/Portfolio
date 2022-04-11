@@ -165,8 +165,8 @@ body {
 
 .modal-dialog { min-width: 850px;}
 
-.modal-title { font-size: 24px;}
-.modal-body { font-size: 16px;}
+.modal-title { font-size: 28px;}
+.modal-body { font-size: 20px;}
 
 .modal-body img {
   width: 30px;
