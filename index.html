@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,11 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <title>Dev. Thiago Freitas</title>
 </head>
+
 <body>
     <header class="nav-container">
         <nav class="container nav-main">
@@ -38,10 +40,13 @@
                 <div class="pf-cont2">
                     <p class="profile-title">Olá!</p>
                     <p class="profile-description">Sou Thiago, casado, tenho 2 filhas.
-                        Estou cursando Programação <a href="https://loja.mundosenai.com.br/pages/programador-full-stack/" target="_blank"
-                            data-toggle="tooltip" title="Descubra mais sobre este curso...">Full-Stack</a> pelo SENAI (EAD com Conclusão em Julho 2022) e
-                        <a href="https://devsuperior.com.br/formacao-desenvolvedor-moderno" target="_blank" data-toggle="tooltip"
-                            title="Descubra mais sobre este curso...">Formação Desenvolvedor Moderno</a> pela DevSuperior (EAD com Conclusão prevista em Janeiro 2023).
+                        Estou cursando Programação <a
+                            href="https://loja.mundosenai.com.br/pages/programador-full-stack/" target="_blank"
+                            data-toggle="tooltip" title="Descubra mais sobre este curso...">Full-Stack</a> pelo SENAI
+                        (EAD com Conclusão em Julho 2022) e
+                        <a href="https://devsuperior.com.br/formacao-desenvolvedor-moderno" target="_blank"
+                            data-toggle="tooltip" title="Descubra mais sobre este curso...">Formação Desenvolvedor
+                            Moderno</a> pela DevSuperior (EAD com Conclusão prevista em Janeiro 2023).
                     </p>
                 </div>
             </div>
@@ -50,36 +55,98 @@
             <h2 class="portfolio-title">Portfólio</h2>
             <div class="portfolio-container">
                 <div class="card">
+                    <img src="img/Projeto4.PNG" alt="DSMovie">
+                    <h4>DSMovie</h4>
+                    <p>Projeto desenvolvido durante a semana do evento "Semana Spring React" da DevSuperior.</p>
+                    <a href="#" target="_blank" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#Modal4">Ver
+                        mais</a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">DSMovie</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Neste evento foi desenvolvido um projeto de site para avaliação de filmes. Foram 3 episódios, do zero à implantação na Nuvem:
+                                    <br>
+                                    <strong>1. Front End estátio</strong> <br>
+                                    Criação do Projeto, repositório no GitHub, layout estático, Bootstrap, componentes
+                                    React, HTML e CSS, rotas e navegação.
+                                    <br>
+                                    <strong>2. Back End</strong> <br>
+                                    Modelo de domínio, database seed, busca paginada, salvar dados, API REST, perfif de
+                                    teste com banco H2, perfil de homologação e produção com banco Postgresql (eu
+                                    utilizei o Insomnia).
+                                    <br>
+                                    <strong>3. Integração e Implementação</strong> <br>
+                                    Props, requisição com Axios, React Hooks, parâmetros de rota, integração front end
+                                    com back end e implementação na Nuvem.
+                                    <hr>
+                                    Ferramentas utilizadas:<br>
+                                    <div class="modalferr">
+                                        <div><img src="img/icons8-visual-studio-code-2019.svg" alt="Visual Studio">
+                                            Visial Studio</div>
+                                        <div><img src="img/icons8-git.svg" alt="Git"> Git</div>
+                                        <div><img src="img/icons8-github.svg" alt="GitHub"> GitHub</div>
+                                        <div><img src="img/insomnia.svg" alt="Insomnia"> Insomnia</div>
+                                        <div><img src="img/icons8-typescript.svg" alt="Typescript"> Typescript</div>
+                                        <div><img src="img/icons8-html-5.svg" alt="HTML5"> HTML5</div>
+                                        <div><img src="img/icons8-react.svg" alt="React"> React</div>
+                                        <div><img src="img/icons8-spring2.svg">Spring</div>
+                                        <div><img src="img/icons8-postgreesql.svg" alt="Postgresql"> Postgresql</div>
+                                    </div>
+                                    <a href="https://github.com/Tleofreitas/DSMovie" target="_blank">
+                                        Ver repositório do GitHub</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                    <a class="btn btn-dark" href="https://tfdsmovie.netlify.app/"
+                                        target="_blank">Visualizar Projeto</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
                     <img src="img/Projeto3.PNG" alt="DSPlayGames">
                     <h4>DSPlayGames</h4>
                     <p>Projeto desenvolvido durante o módulo de HTML e CSS da DevSuperior.</p>
                     <a href="#" target="_blank" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#Modal3">Ver
                         mais</a>
                     <!-- Modal -->
-                    <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel">DSPlayGames</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    O desafio proposto foi desenvolver um projeto <i>"mobile first"</i> e aplicar responsividade para layouts 768px ou superiores.
+                                    O desafio proposto foi desenvolver um projeto <i>"mobile first"</i> e aplicar
+                                    responsividade para layouts 768px ou superiores.
                                     <br>
                                     Obs: O projeto é um layout estático e não possui funcionalidades implementadas.
                                     <hr>
                                     Ferramentas utilizadas:<br>
                                     <div class="modalferr">
-                                    <div><img src="img/icons8-visual-studio-code-2019.svg" alt="Visual Studio"> Visial Studio</div>
-                                    <div><img src="img/icons8-html-5.svg" alt="HTML5"> HTML5</div>
-                                    <div><img src="img/icons8-css3.svg" alt="CSS3"> CSS3</div>
-                                    <div><img src="img/icons8-git.svg" alt="Git"> Git</div>
-                                    <div><img src="img/icons8-github.svg" alt="GitHub"> GitHub</div>
+                                        <div><img src="img/icons8-visual-studio-code-2019.svg" alt="Visual Studio">
+                                            Visial Studio</div>
+                                        <div><img src="img/icons8-html-5.svg" alt="HTML5"> HTML5</div>
+                                        <div><img src="img/icons8-css3.svg" alt="CSS3"> CSS3</div>
+                                        <div><img src="img/icons8-git.svg" alt="Git"> Git</div>
+                                        <div><img src="img/icons8-github.svg" alt="GitHub"> GitHub</div>
+                                    </div>
                                 </div>
-                            </div>                        
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                                    <a class="btn btn-dark" href="https://github.com/Tleofreitas/Mod3_Desafio3.git" target="_blank">Visualizar Projeto</a>
+                                    <a class="btn btn-dark" href="https://github.com/Tleofreitas/Mod3_Desafio3.git"
+                                        target="_blank">Visualizar Projeto</a>
                                 </div>
                             </div>
                         </div>
@@ -92,30 +159,35 @@
                     <a href="#" target="_blank" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#Modal2">Ver
                         mais</a>
                     <!-- Modal -->
-                    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel">ExactTime</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    O desafio proposto foi desenvolver uma interface para um e-commerce <i>FAKE</i> para vendas de relógios com diversas classes do Bootstrap.
+                                    O desafio proposto foi desenvolver uma interface para um e-commerce <i>FAKE</i> para
+                                    vendas de relógios com diversas classes do Bootstrap.
                                     <br>
                                     Obs: O projeto é um layout estático e não possui funcionalidades implementadas.
                                     <hr>
                                     Ferramentas utilizadas:<br>
                                     <div class="modalferr">
-                                    <div><img src="img/icons8-visual-studio-code-2019.svg" alt="Visual Studio"> Visial Studio</div>
-                                    <div><img src="img/bootstrap.svg" alt="Bootstrap"> Bootstrap 5</div>
-                                    <div><img src="img/icons8-html-5.svg" alt="HTML5"> HTML5</div>
-                                    <div><img src="img/icons8-css3.svg" alt="CSS3"> CSS3</div>
-                                    <div><img src="img/icons8-github.svg" alt="GitHub"> GitHub</div>
+                                        <div><img src="img/icons8-visual-studio-code-2019.svg" alt="Visual Studio">
+                                            Visial Studio</div>
+                                        <div><img src="img/bootstrap.svg" alt="Bootstrap"> Bootstrap 5</div>
+                                        <div><img src="img/icons8-html-5.svg" alt="HTML5"> HTML5</div>
+                                        <div><img src="img/icons8-css3.svg" alt="CSS3"> CSS3</div>
+                                        <div><img src="img/icons8-github.svg" alt="GitHub"> GitHub</div>
+                                    </div>
                                 </div>
-                            </div>                        
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                                    <a class="btn btn-dark" href="https://github.com/Tleofreitas/ExactTime" target="_blank">Visualizar Projeto</a>
+                                    <a class="btn btn-dark" href="https://github.com/Tleofreitas/ExactTime"
+                                        target="_blank">Visualizar Projeto</a>
                                 </div>
                             </div>
                         </div>
@@ -128,38 +200,45 @@
                     <a href="#" target="_blank" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#Modal1">Ver
                         mais</a>
                     <!-- Modal -->
-                    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel">Game Mania</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     Este foi meu primeiro projeto.<br>
-                                    O desafio proposto foi desenvolver uma interface para um e-commerce <i>FAKE</i> para vendas do mundo gamer.
+                                    O desafio proposto foi desenvolver uma interface para um e-commerce <i>FAKE</i> para
+                                    vendas do mundo gamer.
                                     <br>
-                                    Obs: O objetivo era dar uma introdução e uma breve pincelada nas ferramentas. O site não é 100% funcional.
+                                    Obs: O objetivo era dar uma introdução e uma breve pincelada nas ferramentas. O site
+                                    não é 100% funcional.
                                     <hr>
                                     Ferramentas utilizadas:<br>
                                     <div class="modalferr">
-                                    <div><img src="img/icons8-figma.svg" alt="Figma"> Figma</div>                                    
-                                    <div><img src="img/icons8-visual-studio-code-2019.svg" alt="Visual Studio"> Visial Studio</div>
-                                    <div><img src="img/icons8-html-5.svg" alt="HTML5"> HTML5</div>
-                                    <div><img src="img/icons8-css3.svg" alt="CSS3"> CSS3</div>
-                                    <div><img src="img/bootstrap.svg" alt="Bootstrap"> Bootstrap</div>
-                                    <div><img src="img/icons8-javascript.svg" alt="JavaScript"> JavaScript</div>
-                                    <div><img src="img/icons8-git.svg" alt="Git"> Git</div>
-                                    <div><img src="img/icons8-github.svg" alt="GitHub"> GitHub</div>
-                                    <div><img src="img/postman.png" alt="Postman"> Postman</div>
-                                    <div><img src="img/icons8-java-eclipse.svg" alt="Eclipse"> Eclipse</div>
+                                        <div><img src="img/icons8-figma.svg" alt="Figma"> Figma</div>
+                                        <div><img src="img/icons8-visual-studio-code-2019.svg" alt="Visual Studio">
+                                            Visial Studio</div>
+                                        <div><img src="img/icons8-html-5.svg" alt="HTML5"> HTML5</div>
+                                        <div><img src="img/icons8-css3.svg" alt="CSS3"> CSS3</div>
+                                        <div><img src="img/bootstrap.svg" alt="Bootstrap"> Bootstrap</div>
+                                        <div><img src="img/icons8-javascript.svg" alt="JavaScript"> JavaScript</div>
+                                        <div><img src="img/icons8-git.svg" alt="Git"> Git</div>
+                                        <div><img src="img/icons8-github.svg" alt="GitHub"> GitHub</div>
+                                        <div><img src="img/postman.png" alt="Postman"> Postman</div>
+                                        <div><img src="img/icons8-java-eclipse.svg" alt="Eclipse"> Eclipse</div>
+                                    </div>
+                                    <a href="https://github.com/Tleofreitas/GameManiaDevThiagoFreitas" target="_blank">
+                                        Ver repositório do GitHub</a>
                                 </div>
-                                <a href="https://github.com/Tleofreitas/GameManiaDevThiagoFreitas" target="_blank">
-                                    Ver repositório do GitHub</a>
-                            </div>                        
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                                    <a class="btn btn-dark" href="https://tleofreitas.github.io/GameManiaDevThiagoFreitas/" target="_blank">Visualizar Projeto</a>
+                                    <a class="btn btn-dark"
+                                        href="https://tleofreitas.github.io/GameManiaDevThiagoFreitas/"
+                                        target="_blank">Visualizar Projeto</a>
                                 </div>
                             </div>
                         </div>
@@ -176,39 +255,49 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
                                 Mais sobre mim...
                             </button>
                         </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Possuo ensino superior em Engenharia Civil, porém nunca atuei na área por
-                                falta de oportunidade. Através de meus resultados e da conclusão dessa graduação recebi a
-                                oportunidade de promoção de BackOffice para Assistente de T.I., onde aprendi tudo na prática, no dia
-                                a dia, com apoio de meu gerente e companheiros de equipe. Já atuo na área de help desk a quase 4
-                                anos, porém me identifiquei muito com a área de Programação. Meu foco presente e futuro é me
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Possuo ensino superior em Engenharia Civil, porém nunca atuei na
+                                área por
+                                falta de oportunidade. Através de meus resultados e da conclusão dessa graduação recebi
+                                a
+                                oportunidade de promoção de BackOffice para Assistente de T.I., onde aprendi tudo na
+                                prática, no dia
+                                a dia, com apoio de meu gerente e companheiros de equipe. Já atuo na área de help desk a
+                                quase 4
+                                anos, porém me identifiquei muito com a área de Programação. Meu foco presente e futuro
+                                é me
                                 capacitar nessa área para conseguir minha primeira oportunidade.</div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
                                 Contatos
                             </button>
                         </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                            data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <div>
                                     <a href="https://api.whatsapp.com/send?phone=5511951221949" target="_blank">
                                         <img src="img/icons8-phone-squared-30.png" alt="Telefone">
                                         (11)95122-1949 <img src="img/icons8-whatsapp.svg" alt="WhatsApp"
-                                            href="https://api.whatsapp.com/send?phone=5511951221949" target="_blank"></a>
+                                            href="https://api.whatsapp.com/send?phone=5511951221949"
+                                            target="_blank"></a>
                                 </div>
                                 <div>
-                                    <img src="img/icons8-email-64.png" alt="E-mail"><span>thiagoleonardo1995@live.com</span>
-                                    <img src="img/icons8-email-64.png" alt="E-mail2"><span>thiagofreitas439@gmail.com</span>
+                                    <img src="img/icons8-email-64.png"
+                                        alt="E-mail"><span>thiagoleonardo1995@live.com</span>
+                                    <img src="img/icons8-email-64.png"
+                                        alt="E-mail2"><span>thiagofreitas439@gmail.com</span>
                                 </div>
                             </div>
                         </div>
@@ -216,12 +305,13 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
                                 Redes Profissionais
                             </button>
                         </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                            data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <div>
                                     <a href="https://github.com/Tleofreitas" target="_blank">
@@ -229,8 +319,9 @@
                                     </a>
                                 </div>
                                 <div>
-                                    <a href="https://br.linkedin.com/in/thiago-leonardo-rodrigues-de-freitas-7655061ab" target="_blank"><img src="img/icons8-linkedin.svg" alt="Linkedin">
-                                    <span>Linkedin</span>
+                                    <a href="https://br.linkedin.com/in/thiago-leonardo-rodrigues-de-freitas-7655061ab"
+                                        target="_blank"><img src="img/icons8-linkedin.svg" alt="Linkedin">
+                                        <span>Linkedin</span>
                                     </a>
                                 </div>
                             </div>
@@ -239,12 +330,13 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingFive">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
                                 Endereço
                             </button>
                         </h2>
-                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
-                            data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <div class="accordion-body">Jardim Vila Rica, Santo André - SP</div>
                             </div>
@@ -261,4 +353,5 @@
         </footer>
     </main>
 </body>
+
 </html>
