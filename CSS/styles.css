@@ -248,9 +248,34 @@ margin:10px;}
   .modal-body { font-size: 20px; }
   .modal-body img { width: 30px;
     height: 30px; }
-
   .about-title { font-size: 26px; }
   .col-lg-9 { padding-bottom: 20px;}
   .accordion-header .accordion-button { font-size: 22px;}
+}
 
+@media (max-width: 576px) {
+  .nav-container { height: 100px;
+    padding: 15px; }
+  .nav-main { flex-direction: column; }
+  .nav-main a {margin: 0 25px; }
+  .menu-items li { font-size: 16px; margin: 10px;}
+  .pf-container { flex-direction: column; }
+  .profile-title { font-size: 22px; }
+  .profile-description { font-size: 16px; }
+  .pf-cont1 img { width: 100px;}
+  .portfolio-title{ font-size: 22px;
+    margin: 15px 0; }
+  .card { margin: 10px;}
+  .card h4 { margin-top: 20px;
+    font-size: 18px; }
+  .card p {font-size: 14px; }
+  .card .btn { font-size: 14px;}
+  .modal-title { font-size: 28px;}
+  .modal-body { font-size: 20px; }
+  .modal-body img { width: 30px;
+    height: 30px; }
+  .about-title { font-size: 22px; }
+  .col-lg-9 { padding-bottom: 15px;}
+  .accordion-header .accordion-button { font-size: 20px;}
+  .accordion-body { font-size: 16px; }
 }
