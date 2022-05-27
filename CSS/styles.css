@@ -270,8 +270,10 @@ margin:10px;}
     font-size: 18px; }
   .card p {font-size: 14px; }
   .card .btn { font-size: 14px;}
-  .modal-title { font-size: 28px;}
-  .modal-body { font-size: 20px; }
+  .modal-dialog { min-width: 535px;}
+  .modal-title { font-size: 22px;}
+  .modal-body { font-size: 16px; }
+  .modalferr { max-height: 300px};
   .modal-body img { width: 30px;
     height: 30px; }
   .about-title { font-size: 22px; }
