@@ -253,7 +253,7 @@ margin:10px;}
   .accordion-header .accordion-button { font-size: 22px;}
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .nav-container { height: 100px;
     padding: 15px; }
   .nav-main { flex-direction: column; }
