@@ -20,6 +20,8 @@ body {
 }
 
 /* CLASSES, ID's */
+.nav-containerMB { display: none;}
+
 .nav-container {
   background-color: var(--color-1);
   height: 80px;
@@ -230,6 +232,8 @@ text-align: center;
 margin:10px;}
 
 @media (max-width: 992px) {
+  .nav-containerMB {
+    display: none;}
   .nav-brand { font-size: 20px; }
   .menu-items li { font-size: 16px; }
   .profile-title { font-size: 28px; }
@@ -261,13 +265,13 @@ margin:10px;}
   .menu-items li { font-size: 16px; margin: 10px;}
   .pf-container { flex-direction: column; }
   .profile-title { font-size: 22px; }
-  .profile-description { font-size: 16px; }
+  .profile-description { font-size: 18px; }
   .pf-cont1 img { width: 100px;}
   .portfolio-title{ font-size: 22px;
     margin: 15px 0; }
   .card { margin: 10px;}
   .card h4 { margin-top: 20px;
-    font-size: 18px; }
+      font-size: 18px; }
   .card p {font-size: 14px; }
   .card .btn { font-size: 14px;}
   .modal-dialog { min-width: 535px;}
@@ -275,9 +279,73 @@ margin:10px;}
   .modal-body { font-size: 16px; }
   .modalferr { max-height: 300px};
   .modal-body img { width: 30px;
-    height: 30px; }
+      height: 30px; }
   .about-title { font-size: 22px; }
   .col-lg-9 { padding-bottom: 15px;}
   .accordion-header .accordion-button { font-size: 20px;}
   .accordion-body { font-size: 16px;}
+}
+
+@media (max-width: 576px) {
+  .nav-container { display: none; }
+  .container-mb { margin: 0 auto; }
+  .nav-containerMB { display: inline;
+    height: 150px;
+    background-color: var(--color-1);
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    z-index: 10;
+  }
+  .nav-main-mb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-main-mb a {
+    color: var(--color-white);
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .menu-items-mb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 5px 0px;
+    margin: 0px;
+  }
+  .menu-items-mb li {
+    font-size: 14px;
+    margin: 5px 0px;
+    padding: 0px;
+  }
+  .nav-main-mb a:hover {
+    color: var(--color-4);
+  }
+  .nav-brand-mb {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .profile-container { padding: 170px 0 60px 0; }
+  .profile-description { font-size: 16px; }
+  .pf-cont1 { width: 277px; }
+  .pf-cont1 img { width: 75px;}
+  .pf-cont2 { width: 277px; }
+  .card { height: 290px;
+    width: 127px;
+    margin: 5px;}
+  .card img { height: 92px;
+  width: 127px;}
+  .card h4 { margin-top: 10px;
+    font-size: 16px; }
+  .card p {font-size: 12px; margin: 0px;}
+  .card .btn { font-size: 14px;}
+  .modal-dialog { min-width: 300px;
+  min-height: 500px;}
+  .modal-title { font-size: 14px;}
+  .modal-body { font-size: 12px; }
+  .modalferr div { margin: 10px;}
+  .modal-body img { width: 30px;
+      height: 30px; }
 }
