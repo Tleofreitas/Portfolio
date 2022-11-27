@@ -290,7 +290,7 @@ margin:10px;}
   .nav-container { display: none; }
   .container-mb { margin: 0 auto; }
   .nav-containerMB { display: inline;
-    height: 150px;
+    height: 180px;
     background-color: var(--color-1);
     width: 100%;
     padding: 20px;
