@@ -219,6 +219,8 @@ align-items: center;}
 .accordion-header .accordion-button { font-size: 24px;}
 .accordion-body a:hover { color: blue;}
 
+.respImgComp {width: 40px;}
+
 footer {
   background-color: var(--color-1);
   height: 80px;
@@ -284,9 +286,30 @@ margin:10px;}
   .col-lg-9 { padding-bottom: 15px;}
   .accordion-header .accordion-button { font-size: 20px;}
   .accordion-body { font-size: 16px;}
+  .respImgComp {width: 30px;}
 }
 
 @media (max-width: 576px) {
+
+  /* .menu-items-hamb {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 130px;
+  }
+  .menu-items-hamb li {
+    font-size: 14px;
+    margin: 5px 0px;
+    padding: 0px;
+    
+  }
+  
+  .menu-items-hamb li a {
+    color: var(--color-white);
+    text-transform: uppercase;
+    text-decoration: none;
+  } */
+  
   .nav-container { display: none; }
   .container-mb { margin: 0 auto; }
   .nav-containerMB { display: inline;
@@ -297,6 +320,7 @@ margin:10px;}
     position: fixed;
     z-index: 10;
   }
+
   .nav-main-mb {
     display: flex;
     flex-direction: column;
@@ -351,4 +375,5 @@ margin:10px;}
   .accordion-header .accordion-button { font-size: 16px;}
   div.accordion-body { font-size: 14px; padding: 8px 10px;}
   .accordion-body img { width: 20px; height: 20px; margin: 4px;}
+  .respImgComp {width: 25px;}
 }
