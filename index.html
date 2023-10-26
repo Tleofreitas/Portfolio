@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +14,8 @@
         crossorigin="anonymous"></script>
     <title>Dev. Thiago Freitas</title>
 </head>
-
 <body>
+    <!-- Header até 577px -->
     <header class="nav-container col-12">
         <nav class="container nav-main">
             <a class="nav-brand" href="#skills">Dev Full Stack</a>
@@ -24,39 +23,33 @@
                 <li><a href="#me">Apresentação</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
                 <li><a href="#skills">Competências</a></li>
+                <li><a href="#achievements">Conquistas</a></li>
                 <li><a href="#about">Sobre Mim</a></li>
             </ul>
         </nav>
     </header>
-  
-    <!--  Teste de Menu Hamburguer
-    <header class="nav-containerMB col-12">
-        <nav class="container-mb nav-main-mb">
-            <a class="nav-brand-mb" href="#skills">Dev Full Stack</a>
-            <ul class="menu-items-mb">
-                <li><a href="" onclick="clickMenu()"><img class="hamburguer" src="img/" alt="Menu"></a></li>
-            </ul>
-        </nav>
-        <ul class="menu-items-hamb">
-            <li><a href="#me">Apresentação</a></li>
-            <li><a href="#portfolio">Portfólio</a></li>
-            <li><a href="#skills">Competências</a></li>
-            <li><a href="#about">Sobre Mim</a></li>
-        </ul>
-    </header> -->
-
+    <!-- Header Mobile <= 576px-->
     <header class="nav-containerMB col-12">
         <nav class="container-mb nav-main-mb" id="itens">
             <a class="nav-brand-mb" href="#skills">Dev Full Stack</a>
-            <ul class="menu-items-mb">
-                <li><a href="#me">Apresentação</a></li>
-                <li><a href="#skills">Competências</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#about">Sobre Mim</a></li>
-            </ul>
-        </nav>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Menu
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <ul class="menu-items-mb">
+                        <li><a href="#me">Apresentação</a></li>
+                        <li><a href="#skills">Competências</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#achievements">Conquistas</a></li>
+                        <li><a href="#about">Sobre Mim</a></li>
+                    </ul>
+                </div>
+            </div>
     </header>
     <main>
+        <!-- Apresentação -->
         <section id="me" class="profile-container">
             <div class="container pf-container">
                 <div class="pf-cont1">
@@ -71,13 +64,18 @@
                     <p class="profile-description">Sou Thiago, casado, tenho 2 filhas.
                         Concluí o curso de Programador Full-Stack pelo SENAI em Julho 2022 e estou cursando
                         <a href="https://devsuperior.com.br/formacao-desenvolvedor-moderno" target="_blank"
-                            data-toggle="tooltip" title="Descubra mais sobre este curso..." id="portfolio">Formação Desenvolvedor
+                            data-toggle="tooltip" title="Descubra mais sobre este curso..." id="portfolio">Formação
+                            Desenvolvedor
                             Moderno</a> pela DevSuperior (EAD com Conclusão prevista em Janeiro 2023).
                     </p>
-                    <p class="profile-description"> <a href="https://drive.google.com/file/d/1UlVNtp-wuuDZmQjuwOcDt126BrnNrH6K/view?usp=sharing" target="_blank" data-toggle="tooltip" title="Ver Certificado...">Comprovante de conclusão do Senai.</a></p>
+                    <p class="profile-description"> <a
+                            href="https://drive.google.com/file/d/1UlVNtp-wuuDZmQjuwOcDt126BrnNrH6K/view?usp=sharing"
+                            target="_blank" data-toggle="tooltip" title="Ver Certificado...">Comprovante de conclusão do
+                            Senai.</a></p>
                 </div>
             </div>
         </section>
+        <!-- Portfólio -->
         <section class="container">
             <h2 class="portfolio-title">Portfólio</h2>
             <div class="portfolio-container">
@@ -88,8 +86,8 @@
                     <p>Projeto desenvolvido durante a semana do evento "Semana Spring React" da DevSuperior.</p>
                     <a href="#" target="_blank" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#Modal4">Ver
                         mais</a> -->
-                    <!-- Modal -->
-                    <!--
+                <!-- Modal -->
+                <!--
                     <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
@@ -275,6 +273,7 @@
                 </div>
             </div>
         </section>
+        <!-- Competências -->
         <section class="about-container">
             <div id="skills" class="container">
                 <h2 class="about-title">Competências</h2>
@@ -286,7 +285,8 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapse11" aria-expanded="false"
                                 aria-controls="flush-collapse11">
-                                <img class="respImgComp" src="img/icons8-FullStack.svg" alt="Formação Full-Stack"> <p>&nbsp;</p> Programador Full-Stack 
+                                <img class="respImgComp" src="img/icons8-FullStack.svg" alt="Formação Full-Stack">
+                                <p>&nbsp;</p> Programador Full-Stack
                             </button>
                         </h2>
                         <div id="flush-collapse11" class="accordion-collapse collapse"
@@ -295,7 +295,7 @@
                                 Banco de Dados <br>
                                 Codificação para BackEnd <br>
                                 Codificação para Front-End <br>
-                                Desenvolvimento de APIs <br> 
+                                Desenvolvimento de APIs <br>
                                 Fundamentos da Indústria <br>
                                 Fundamentos da Qualidade e Produtividade <br>
                                 Fundamentos da Tecnologia da Informação e Comunicação <br>
@@ -307,7 +307,8 @@
                                 Teste de Front-End <br>
                                 Testes de Back-End <br>
                                 Versionamento <br>
-                                <a href="https://drive.google.com/file/d/1UlVNtp-wuuDZmQjuwOcDt126BrnNrH6K/view?usp=share_link" target="_blank">
+                                <a href="https://drive.google.com/file/d/1UlVNtp-wuuDZmQjuwOcDt126BrnNrH6K/view?usp=share_link"
+                                    target="_blank">
                                     <i><u>Clique para ver certificado</u></i></a></a>
                                 <a href="https://tleofreitas.github.io/GameManiaDevThiagoFreitas/" target="_blank">
                                     <i><u>Clique para ver o Front-End do projeto.</u></i></a></a>
@@ -319,30 +320,34 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOnee" aria-expanded="false"
                                 aria-controls="flush-collapseOnee">
-                                <img class="respImgComp" src="img/icons8-html-5.svg" alt="HTML5"> <p>&nbsp;</p> HTML5
+                                <img class="respImgComp" src="img/icons8-html-5.svg" alt="HTML5">
+                                <p>&nbsp;</p> HTML5
                             </button>
                         </h2>
                         <div id="flush-collapseOnee" class="accordion-collapse collapse"
                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 Links e Âncoras. Display Block e Inline. Div, Span, Tags semânticas e Formulários. <br>
-                                <a href="https://github.com/Tleofreitas/Mod3_Desafio3.git" target="_blank"><i><u>Clique para ver o projeto desenvolvido com HTML e CSS.</u></i></a>
+                                <a href="https://github.com/Tleofreitas/Mod3_Desafio3.git" target="_blank"><i><u>Clique
+                                            para ver o projeto desenvolvido com HTML e CSS.</u></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse2" aria-expanded="false"
-                                aria-controls="flush-collapse2">
-                                <img class="respImgComp" src="img/icons8-css3.svg" alt="CSS3"> <p>&nbsp;</p> CSS3
+                                data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                                <img class="respImgComp" src="img/icons8-css3.svg" alt="CSS3">
+                                <p>&nbsp;</p> CSS3
                             </button>
                         </h2>
-                        <div id="flush-collapse2" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                Seletores, inspeção de elementos, box model, flexbox, box-sizing, containers, borda, sombra, root e variáveis. <br>
-                                <a href="https://github.com/Tleofreitas/Mod3_Desafio3.git" target="_blank"><i><u>Clique para ver o projeto desenvolvido com CSS e HTML.</u></i></a>
+                                Seletores, inspeção de elementos, box model, flexbox, box-sizing, containers, borda,
+                                sombra, root e variáveis. <br>
+                                <a href="https://github.com/Tleofreitas/Mod3_Desafio3.git" target="_blank"><i><u>Clique
+                                            para ver o projeto desenvolvido com CSS e HTML.</u></i></a>
                             </div>
                         </div>
                     </div>
@@ -351,7 +356,8 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapse10" aria-expanded="false"
                                 aria-controls="flush-collapse10">
-                                <img class="respImgComp" src="img/icons8-bootstrap.svg" alt="Bootstrap"> <p>&nbsp;</p> Bootstrap 5
+                                <img class="respImgComp" src="img/icons8-bootstrap.svg" alt="Bootstrap">
+                                <p>&nbsp;</p> Bootstrap 5
                             </button>
                         </h2>
                         <div id="flush-collapse10" class="accordion-collapse collapse"
@@ -366,54 +372,68 @@
                                 Exploração de todos os componentes (Navbar, Carousel, Card, Accordion e etc.) <br>
                                 Customização de componentes; <br>
                                 Helpers e Utilities; <br>
-                                <a href="https://drive.google.com/file/d/1xX9hQds7x5UtAE6JE3BtBZsQCWnan17B/view?usp=share_link" target="_blank">
+                                <a href="https://drive.google.com/file/d/1xX9hQds7x5UtAE6JE3BtBZsQCWnan17B/view?usp=share_link"
+                                    target="_blank">
                                     <i><u>Clique para ver certificado Bootstrap 5</u></i></a>
-                                <a href="https://github.com/Tleofreitas/ExactTime" target="_blank"><i><u>Clique para ver o projeto desenvolvido.</u></i></a>                                
+                                <a href="https://github.com/Tleofreitas/ExactTime" target="_blank"><i><u>Clique para ver
+                                            o projeto desenvolvido.</u></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse3" aria-expanded="false"
-                                aria-controls="flush-collapse3">
-                                <img class="respImgComp" src="img/icons8-logo-java-coffee-cup.svg" alt="Java"> <p>&nbsp;</p> Java - Programação Moderna
+                                data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                                <img class="respImgComp" src="img/icons8-logo-java-coffee-cup.svg" alt="Java">
+                                <p>&nbsp;</p> Java - Programação Moderna
                             </button>
                         </h2>
-                        <div id="flush-collapse3" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <p>Introdução a programação, entrada, saída, atribuição, condicionais, loops, arrays e funções.</p>
-                                <p>Orientação a objetos, classes, encapsulamento, composição, herança, polimorfismo, interfaces, programação funcional, expressões lambda, imutabilidade e coleções.</p>
-                                <p><a href="https://github.com/Tleofreitas/Mod4_Java_Conteudo.git" target="_blank"><i><u>Clique para ver os tópicos de estudo.</u></i></a></p>
+                                <p>Introdução a programação, entrada, saída, atribuição, condicionais, loops, arrays e
+                                    funções.</p>
+                                <p>Orientação a objetos, classes, encapsulamento, composição, herança, polimorfismo,
+                                    interfaces, programação funcional, expressões lambda, imutabilidade e coleções.</p>
+                                <p><a href="https://github.com/Tleofreitas/Mod4_Java_Conteudo.git"
+                                        target="_blank"><i><u>Clique para ver os tópicos de estudo.</u></i></a></p>
                                 <p>Orientação a Objetos: </p>
-                                <p><a href="https://github.com/Tleofreitas/Mod4_DesafioOO-1" target="_blank"><i><u>Desafio Bar</u></i></a></p>
-                                <p><a href="https://github.com/Tleofreitas/Mod4_DesafioOO-2_Encapsulamento" target="_blank"><i><u>Desafio Combate</u></i></a></p>
-                                <p><a href="https://github.com/Tleofreitas/Mod4_DesafioOO-3_Listas.git" target="_blank"><i><u>Desafio Contribuintes</u></i></a></p>
-                                <p><a href="https://github.com/Tleofreitas/Mod4_DesafioOO-4_Composicoes" target="_blank"><i><u>Desafio Empregados</u></i></a></p>
-                                <p><a href="https://github.com/Tleofreitas/Mod4_DesafioOO-5_PlataformaDeEstudo.git" target="_blank"><i><u>Desafio Plataforma de Ensino</u></i></a></p>
-                                <p><a href="https://github.com/Tleofreitas/Mod4_DesafioOO-6.1_AnaliseDeVendas" target="_blank"><i><u>Desafio Análise de Vendas 1</u></i></a></p>
-                                <p><a href="https://github.com/Tleofreitas/Mod4_DesafioOO-6.2_AnaliseDeVendas2" target="_blank"><i><u>Desafio Análise de Vendas 2</u></i></a></p>
+                                <p><a href="https://github.com/Tleofreitas/Mod4_DesafioOO-1"
+                                        target="_blank"><i><u>Desafio Bar</u></i></a></p>
+                                <p><a href="https://github.com/Tleofreitas/Mod4_DesafioOO-2_Encapsulamento"
+                                        target="_blank"><i><u>Desafio Combate</u></i></a></p>
+                                <p><a href="https://github.com/Tleofreitas/Mod4_DesafioOO-3_Listas.git"
+                                        target="_blank"><i><u>Desafio Contribuintes</u></i></a></p>
+                                <p><a href="https://github.com/Tleofreitas/Mod4_DesafioOO-4_Composicoes"
+                                        target="_blank"><i><u>Desafio Empregados</u></i></a></p>
+                                <p><a href="https://github.com/Tleofreitas/Mod4_DesafioOO-5_PlataformaDeEstudo.git"
+                                        target="_blank"><i><u>Desafio Plataforma de Ensino</u></i></a></p>
+                                <p><a href="https://github.com/Tleofreitas/Mod4_DesafioOO-6.1_AnaliseDeVendas"
+                                        target="_blank"><i><u>Desafio Análise de Vendas 1</u></i></a></p>
+                                <p><a href="https://github.com/Tleofreitas/Mod4_DesafioOO-6.2_AnaliseDeVendas2"
+                                        target="_blank"><i><u>Desafio Análise de Vendas 2</u></i></a></p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse4" aria-expanded="false"
-                                aria-controls="flush-collapse4">
-                                <img class="respImgComp" src="img/icons8-banco-de-dados-50.png" alt="Banco de Dados"> <p>&nbsp;</p> Banco de Dados
+                                data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                                <img class="respImgComp" src="img/icons8-banco-de-dados-50.png" alt="Banco de Dados">
+                                <p>&nbsp;</p> Banco de Dados
                             </button>
                         </h2>
-                        <div id="flush-collapse4" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 Modelo conceitual, modelo relacional, normalização, SQL e consultas.
                                 <br>
                                 Bancos já usados:
-                                <img src="img/icons8-logo-mysql.svg" alt="MySQL"> MySQL <img src="img/icons8-postgreesql.svg" alt="Postgresql"> Postgresql
+                                <img src="img/icons8-logo-mysql.svg" alt="MySQL"> MySQL <img
+                                    src="img/icons8-postgreesql.svg" alt="Postgresql"> Postgresql
                                 <br>
-                                <a href="https://cursos.alura.com.br/certificate/thiago-freitas11/mysql-consultas-sql" target="_blank">
+                                <a href="https://cursos.alura.com.br/certificate/thiago-freitas11/mysql-consultas-sql"
+                                    target="_blank">
                                     <i><u>Clique para ver certificado MySQL</u></i></a>
                             </div>
                         </div>
@@ -421,13 +441,13 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse5" aria-expanded="false"
-                                aria-controls="flush-collapse5">
-                                <img class="respImgComp" src="img/icons8-gerenciamento-de-projetos.svg"> <p>&nbsp;</p> Análise de Sistemas
+                                data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                                <img class="respImgComp" src="img/icons8-gerenciamento-de-projetos.svg">
+                                <p>&nbsp;</p> Análise de Sistemas
                             </button>
                         </h2>
-                        <div id="flush-collapse5" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 Análise de negócios, escopo, requisitos, casos de uso e modelagem conceitual.
                             </div>
@@ -436,28 +456,28 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse6" aria-expanded="false"
-                                aria-controls="flush-collapse6">
-                                <img class="respImgComp" src="img/icons8-javascript.svg" alt="JavaScript"> <p>&nbsp;</p> JavaScript
+                                data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                                <img class="respImgComp" src="img/icons8-javascript.svg" alt="JavaScript">
+                                <p>&nbsp;</p> JavaScript
                             </button>
                         </h2>
-                        <div id="flush-collapse6" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                Tipos, var/let/const, strings, operadores, funções, objetos, construtores, prototype, classes, módulos, promises, fecth API, async/await.
+                                Tipos, var/let/const, strings, operadores, funções, objetos, construtores, prototype,
+                                classes, módulos, promises, fecth API, async/await.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse7" aria-expanded="false"
-                                aria-controls="flush-collapse7">
+                                data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
                                 <img class="respImgComp" src="img/icons8-linux-50.svg" alt="Linux"> Linux
                             </button>
                         </h2>
-                        <div id="flush-collapse7" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <p>Linux e ferramentas de linha de comando <br>
                                     Editores de texto <br>
@@ -470,7 +490,8 @@
                                     Configuração de redes <br>
                                     Shell Script, Compactadores e Empacotadores e agendamento de tarefas <br>
                                     Empacotamento e Compressão</p>
-                                <a href="https://drive.google.com/file/d/1MH-W1_d_ZDBWcGQFJ_PCApN4tiCL_8Wm/view?usp=share_link" target="_blank">
+                                <a href="https://drive.google.com/file/d/1MH-W1_d_ZDBWcGQFJ_PCApN4tiCL_8Wm/view?usp=share_link"
+                                    target="_blank">
                                     <i><u>Clique para ver certificado Linux</u></i></a></a>
                             </div>
                         </div>
@@ -478,15 +499,17 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse8" aria-expanded="false"
-                                aria-controls="flush-collapse8">
-                                <img class="respImgComp" src="img/icons8-spring2.svg" alt="Back end Spring Boot com Java"> <p>&nbsp;</p> Back-End - Spring Boot com Java
+                                data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+                                <img class="respImgComp" src="img/icons8-spring2.svg"
+                                    alt="Back end Spring Boot com Java">
+                                <p>&nbsp;</p> Back-End - Spring Boot com Java
                             </button>
                         </h2>
-                        <div id="flush-collapse8" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                API REST, criação de projeto, sistema e componentes, injeção de dependência, CRUD e casos de
+                                API REST, criação de projeto, sistema e componentes, injeção de dependência, CRUD e
+                                casos de
                                 uso, camadas, controladores, serviços, repositories, entidades, ORM, DTO, autenticação e
                                 autorização, implantação. <br>
                                 <a href="https://github.com/Tleofreitas/Mod8_DSCommerce.git" target="_blank">
@@ -497,13 +520,13 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse9" aria-expanded="false"
-                                aria-controls="flush-collapse9">
-                                <img class="respImgComp" src="img/icons8-ReactComp.svg" alt="React"> <p>&nbsp;</p> Front-End - ReactJS com TypeScript. 
+                                data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">
+                                <img class="respImgComp" src="img/icons8-ReactComp.svg" alt="React">
+                                <p>&nbsp;</p> Front-End - ReactJS com TypeScript.
                             </button>
                         </h2>
-                        <div id="flush-collapse9" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 Em formação ...
                             </div>
@@ -511,7 +534,46 @@
                     </div>
                 </div>
             </div>
-
+        </section>
+        <!-- Conquistas -->
+        <section class="container">
+            <h2 class="portfolio-title">Conquistas</h2>
+            <div id="achievements" class="portfolio-container">
+                <div class="card">
+                    <img src="img/Conquistas/1 12-17 Engenheiro Civil.jpg" alt="Engenharia Civil">
+                    <h4>Engenharia Civil</h4>
+                    <a href="#" target="_blank" class="btn btn-dark" data-bs-toggle="modal"
+                        data-bs-target="#Cert_1">Visualizar</a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Cert_1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Engenharia Civil</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="imgCertModal">
+                                    <img src="img/Conquistas/1 12-17 Engenheiro Civil.jpg" alt="Engenharia Civil">
+                                </div>
+                                <div class="modal-body">
+                                    Universidade Anhanguera, 2013 a 2017 
+                                    <br>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                    <a class="btn btn-dark" href="https://drive.google.com/file/d/1lwdMXtfp7yUt1yqtWZQgieBvrLN0V7Qh/view?usp=sharing"
+                                        target="_blank">Ver Online</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sobre Mim -->
+        <section class="about-container">
             <div id="about" class="container">
                 <h2 class="about-title">Sobre Mim...</h2>
             </div>
@@ -527,9 +589,13 @@
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse"
                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Possuo ensino superior em Engenharia Civil, porém nunca atuei na
-                                área por falta de oportunidade. Atuei como Assistente de T.I. durante 4 anos, obtendo sólidos conhecimentos 
-                                em Infraestrutura de hardwares e softwares. Obtive minha primeira oportunidade como programador na Dogo, onde 
+                            <div class="accordion-body">Possuo ensino superior em Engenharia Civil, porém nunca
+                                atuei na
+                                área por falta de oportunidade. Atuei como Assistente de T.I. durante 4 anos,
+                                obtendo
+                                sólidos conhecimentos
+                                em Infraestrutura de hardwares e softwares. Obtive minha primeira oportunidade como
+                                programador na Dogo, onde
                                 atuo hoje como Programador Web Java Jr.
                             </div>
                         </div>
@@ -607,14 +673,25 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
+        <!-- Footer -->
         <footer>
             <div class="container">
                 <p class="tks">Obrigado por visitar meu portfólio!</p>
             </div>
         </footer>
     </main>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
