@@ -94,6 +94,7 @@ body {
     align-items: center;
   }
 
+
   .pf-cont2 a {
     color: var(--color-white);
     font-weight: bold;
@@ -263,7 +264,7 @@ body {
   .profile-title { font-size: 28px; }
   .profile-description { font-size: 20px; }
   .pf-cont1 { width: 234px; }
-  .pf-cont2 { width: 373px; }
+  .pf-cont2 { width: 60%; }
   .portfolio-title{ font-size: 26px;
     margin: 20px 0; }
   .card { width: 230px; }
@@ -298,6 +299,7 @@ body {
   .nav-main { flex-direction: column; }
   .menu-items li { font-size: 12px; margin: 5px;}
   .pf-container { flex-direction: column; }
+  .pf-cont2 { width: 80%; }
   .profile-title { font-size: 22px; }
   .profile-description { font-size: 18px; }
   .pf-cont1 img { width: 100px;}
@@ -371,9 +373,8 @@ body {
   .profile-description { font-size: 16px; }
   .pf-cont1 { width: 277px; }
   .pf-cont1 img { width: 75px;}
-  .pf-cont2 { width: 277px; }
-  .card { width: 127px;
-    margin: 5px;}
+  .pf-cont2 { width: 80%; }
+  .card { width: 138px; }
   .card img { height: 92px;
   width: 127px;}
   .imgCertModal {
@@ -399,4 +400,9 @@ body {
   div.accordion-body { font-size: 14px; padding: 8px 10px;}
   .accordion-body img { width: 20px; height: 20px; margin: 4px;}
   .respImgComp {width: 25px;}
+}
+
+@media (max-width: 339px) {
+  .card { width: 137px;
+    margin: 5px;}
 }
