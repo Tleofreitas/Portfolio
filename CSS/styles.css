@@ -188,7 +188,7 @@ body {
     max-height: 250px;
   }
 
-  .modalferr div { margin: 20px;}
+  .modalferr div { margin: 14px;}
 
   .about-container {
     background-color: var(--color-3);
@@ -282,6 +282,7 @@ body {
   .card p {font-size: 16px; }
   .card .btn { font-size: 16px;}
   .modal-dialog { min-width: 693px;}
+  .modalferr div { margin: 8px;}
   .modal-title { font-size: 28px;}
   .modal-body { font-size: 20px; }
   .modal-body img { width: 30px;
@@ -405,4 +406,5 @@ body {
 @media (max-width: 339px) {
   .card { width: 137px;
     margin: 5px;}
+  .modalferr { margin: 0 0;}
 }
